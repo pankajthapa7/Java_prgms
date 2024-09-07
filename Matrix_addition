@@ -1,0 +1,92 @@
+import java.util.Scanner;
+ public class Add_Matrix
+ {
+ public static void main(String[] args)
+ {
+ int p, q, m, n;
+ Scanner s = new Scanner(System.in);
+ System.out.print("Enter number of rows in first matrix:");
+ p = s.nextInt();
+ System.out.print("Enter number ofcolumns in first matrix:");
+ q = s.nextInt();
+ System.out.print("Enter number of rows in second matrix:");
+ m = s.nextInt();
+ System.out.print("Enter number of columns in second matrix:");
+ n = s.nextInt();
+ if (p == m && q == n)
+ {
+ int a[][] = new int[p][q];
+ int b[][] = new int[m][n];
+ int c[][] = new int[m][n];
+ System.out.println("Enter all the elements of first matrix:");
+ for (int i = 0; i < p; i++)
+ {
+ for (int j = 0; j < q; j++)
+ {
+ a[i][j] = s.nextInt();
+ }
+ }
+ System.out.println("Enter all the elements of second matrix:");
+ for (int i = 0; i < m; i++)
+ {
+ for (int j = 0; j < n; j++)
+ {
+ b[i][j] = s.nextInt();
+ }
+
+ }
+ System.out.println("First Matrix:");
+ for (int i = 0; i < p; i++)
+39. {
+40. for (int j = 0; j < q; j++)
+41. {
+42. System.out.print(a[i][j]+"
+");
+43. }
+44. System.out.println("");
+45. }
+46. System.out.println("Second
+Matrix:");
+47. for (int i = 0; i < m; i++)
+48. {
+49. for (int j = 0; j < n; j++)
+50. {
+51. System.out.print(b[i][j]+"
+");
+52. }
+53. System.out.println("");
+54. }
+55. for (int i = 0; i < p; i++)
+56. {
+57. for (int j = 0; j < n; j++)
+58. {
+59. for (int k = 0; k < q;
+k++)
+60. {
+61. c[i][j] = a[i][j] +
+b[i][j];
+62. }
+63. }
+64. }
+65. System.out.println("Matrix after
+addition:");
+66. for (int i = 0; i < p; i++)
+67. {
+68. for (int j = 0; j < n; j++)
+69. {
+3
+70. System.out.print(c[i][j]+"
+");
+71. }
+72. System.out.println("");
+73. }
+74. }
+75. else
+76. {
+77. System.out.println("Addition would
+not be possible");
+78. }
+79. }
+80. }
+
+
