@@ -1,0 +1,24 @@
+public class Boolean
+public static void main(String args[])
+2. {
+3. Scanner s = new Scanner(System.in);
+4. System.out.print("Enter a:");
+5. boolean a = s.nextBoolean();
+6. System.out.print("Enter b:");
+7. boolean b = s.nextBoolean();
+8. boolean c = a | b;
+9. boolean d = a & b;
+10. boolean e = a ^ b;
+11. boolean f = (!a & b) | (a & !b);
+12. boolean g = !a;
+13. System.out.println("a = " + a);
+14. System.out.println("b = " + b);
+15. System.out.println("a|b = " + c);
+16. System.out.println("a&b = " + d);
+17. System.out.println("a^b = " + e);
+18. System.out.println("!a&b|a&!b = " +
+f);
+19. System.out.println("!a = " + g);
+20. }
+11  }
+21. }
