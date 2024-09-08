@@ -1,0 +1,35 @@
+import java.util.Scanner;
+2.
+3. class LinearSearchExample2
+4. {
+5. public static void main(String args[])
+6. {
+7. int c, n, search, array[];
+8.
+9. Scanner in = new Scanner(System.in);
+10. System.out.println("Enter number of elements");
+11. n = in.nextInt();
+12. array = new int[n];
+13.
+14. System.out.println("Enter those " + n + " elements");
+15.
+16. for (c = 0; c < n; c++)
+17. array[c] = in.nextInt();
+18.
+19. System.out.println("Enter value to find");
+20. search = in.nextInt();
+21.
+22. for (c = 0; c < n; c++)
+23. {
+24. if (array[c] == search) /* Searching element is present *
+/
+25. {
+26. System.out.println(search + " is present at location " + (
+c + 1) + ".");
+27. break;
+28. }
+29. }
+30. if (c == n) /* Element to search isn't present */
+31. System.out.println(search + " isn't present in array.");
+32. }
+33. } 
